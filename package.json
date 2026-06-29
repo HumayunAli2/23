@@ -1,0 +1,14 @@
+{
+  "name": "american-publishing-network",
+  "version": "1.2.0",
+  "description": "The American Publishing Network — premium publishing agency website. Pure static HTML/CSS/JS, no build step required.",
+  "private": true,
+  "type": "static",
+  "scripts": {
+    "build": "echo 'Static site — no build required. Files served as-is from public_html.'",
+    "start": "echo 'Static site — serve index.html directly from public_html.'"
+  },
+  "keywords": ["publishing", "static-site", "html", "css", "javascript"],
+  "author": "The American Publishing Network",
+  "license": "UNLICENSED"
+}

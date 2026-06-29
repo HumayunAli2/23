@@ -1,0 +1,30 @@
+name: Deploy to Hostinger
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  deploy:
+    name: Sync to Hostinger
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Deploy files to Hostinger via FTP
+        uses: samkirkland/ftp-deploy@4.3.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./
+          server-dir: public_html/
+          exclude: |
+            .git/**
+            .github/**
+            .gitignore
+            README.md
+            .nojekyll
+            **/node_modules/**
+            **/*.md
+          dangerous-clean-slate: false
+          dry-run: false
