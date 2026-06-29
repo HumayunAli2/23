@@ -1314,7 +1314,8 @@ section { position: relative; padding: 90px 0; }
   align-items: center;
   justify-content: flex-start;
   min-width: 0;
-  overflow: hidden;
+  overflow: visible;
+  padding-top: 14px;
 }
 .process__step-btn {
   width: 100%;
