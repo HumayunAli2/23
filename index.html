@@ -144,26 +144,45 @@
     <div class="nav__inner">
       <a href="#home" class="brand" aria-label="The American Publishing Network home">
         <span class="brand__mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#8B0000"/>
+                <stop offset="100%" stop-color="#E63946"/>
+              </linearGradient>
+            </defs>
+            <!-- Open book pages -->
+            <path d="M24 12 C20 10, 14 10, 8 11 L8 38 C14 37, 20 37, 24 39" fill="url(#brandGrad)" opacity="0.95"/>
+            <path d="M24 12 C28 10, 34 10, 40 11 L40 38 C34 37, 28 37, 24 39" fill="url(#brandGrad)" opacity="0.8"/>
+            <!-- Spine -->
+            <line x1="24" y1="12" x2="24" y2="39" stroke="#fff" stroke-width="1.2" opacity="0.9"/>
+            <!-- Page lines left -->
+            <line x1="11" y1="16" x2="20" y2="15.5" stroke="#fff" stroke-width="1" opacity="0.5" stroke-linecap="round"/>
+            <line x1="11" y1="20" x2="20" y2="19.5" stroke="#fff" stroke-width="1" opacity="0.5" stroke-linecap="round"/>
+            <line x1="11" y1="24" x2="20" y2="23.5" stroke="#fff" stroke-width="1" opacity="0.5" stroke-linecap="round"/>
+            <!-- Page lines right -->
+            <line x1="28" y1="15.5" x2="37" y2="16" stroke="#fff" stroke-width="1" opacity="0.5" stroke-linecap="round"/>
+            <line x1="28" y1="19.5" x2="37" y2="20" stroke="#fff" stroke-width="1" opacity="0.5" stroke-linecap="round"/>
+            <line x1="28" y1="23.5" x2="37" y2="24" stroke="#fff" stroke-width="1" opacity="0.5" stroke-linecap="round"/>
+            <!-- Crest star on top -->
+            <path d="M24 4 L25.5 8 L29.5 8 L26.5 10.5 L27.5 14.5 L24 12.5 L20.5 14.5 L21.5 10.5 L18.5 8 L22.5 8 Z" fill="#FF5A5F"/>
+          </svg>
         </span>
-        American <span>Publishing</span> Network
+        <span class="brand__text">
+          <span class="brand__name">American Publishing</span>
+          <span class="brand__sub">Network</span>
+        </span>
       </a>
 
       <nav class="nav__links" aria-label="Primary">
         <a href="#services" class="nav__link">Services</a>
-        <a href="#why" class="nav__link">The Network</a>
         <a href="#process" class="nav__link">How It Works</a>
         <a href="#books" class="nav__link">Our Authors</a>
         <a href="#pricing" class="nav__link">Pricing</a>
-        <a href="#faq" class="nav__link">FAQ</a>
         <a href="#contact" class="nav__link">Contact</a>
       </nav>
 
       <div class="nav__cta">
-        <a href="https://wa.me/16142856455?text=Hi%20American%20Publishing%20Network%2C%20I'm%20interested%20in%20your%20publishing%20services." target="_blank" rel="noopener" class="nav__phone">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          (614) 285-6455
-        </a>
         <a href="#contact" class="btn btn-primary btn-pulse btn-shine">Start Your Journey</a>
       </div>
 
@@ -690,11 +709,31 @@
     <div class="container">
       <div class="footer__top">
         <div class="footer__brand">
-          <a href="#home" class="brand">
+          <a href="#home" class=" brand brand--footer" aria-label="The American Publishing Network home">
             <span class="brand__mark" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="brandGradFoot" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#8B0000"/>
+                    <stop offset="100%" stop-color="#E63946"/>
+                  </linearGradient>
+                </defs>
+                <path d="M24 12 C20 10, 14 10, 8 11 L8 38 C14 37, 20 37, 24 39" fill="url(#brandGradFoot)" opacity="0.95"/>
+                <path d="M24 12 C28 10, 34 10, 40 11 L40 38 C34 37, 28 37, 24 39" fill="url(#brandGradFoot)" opacity="0.8"/>
+                <line x1="24" y1="12" x2="24" y2="39" stroke="#fff" stroke-width="1.2" opacity="0.9"/>
+                <line x1="11" y1="16" x2="20" y2="15.5" stroke="#fff" stroke-width="1" opacity="0.5" stroke-linecap="round"/>
+                <line x1="11" y1="20" x2="20" y2="19.5" stroke="#fff" stroke-width="1" opacity="0.5" stroke-linecap="round"/>
+                <line x1="11" y1="24" x2="20" y2="23.5" stroke="#fff" stroke-width="1" opacity="0.5" stroke-linecap="round"/>
+                <line x1="28" y1="15.5" x2="37" y2="16" stroke="#fff" stroke-width="1" opacity="0.5" stroke-linecap="round"/>
+                <line x1="28" y1="19.5" x2="37" y2="20" stroke="#fff" stroke-width="1" opacity="0.5" stroke-linecap="round"/>
+                <line x1="28" y1="23.5" x2="37" y2="24" stroke="#fff" stroke-width="1" opacity="0.5" stroke-linecap="round"/>
+                <path d="M24 4 L25.5 8 L29.5 8 L26.5 10.5 L27.5 14.5 L24 12.5 L20.5 14.5 L21.5 10.5 L18.5 8 L22.5 8 Z" fill="#FF5A5F"/>
+              </svg>
             </span>
-            American <span style="color:var(--color-accent)">Publishing</span> Network
+            <span class="brand__text">
+              <span class="brand__name" style="color:#fff;">American Publishing</span>
+              <span class="brand__sub">Network</span>
+            </span>
           </a>
           <p>From first draft to standing room only. One partnership. Every step of your author journey — writing, publishing, design, marketing, press, podcasts, and events.</p>
           <div class="footer__social">
